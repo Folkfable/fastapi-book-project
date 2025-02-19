@@ -70,7 +70,7 @@ jobs:
             docker-compose --version
             sudo docker pull ${{ secrets.ACR_NAME }}.azurecr.io/fastapi-app:latest
             sudo docker pull ${{ secrets.ACR_NAME }}.azurecr.io/nginx-proxy:latest
-            cd fastapi-book-project || git clone https://github.com/tochinicky/fastapi-book-project && cd fastapi-book-project
+            cd fastapi-book-project || git clone https://github.com/folkfable/fastapi-book-project && cd fastapi-book-project
             git pull
             sudo docker-compose up -d --build
 
